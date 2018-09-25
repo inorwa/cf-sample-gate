@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    Welcome in cf-sample-gate<br>
+    Version:0.1
+
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Login</th>
+            <th>Given Name</th>
+            <th>Family Name</th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.login}"></td>
+            <td th:text="${user.givenName}"></td>
+            <td th:text="${user.familyName}"></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
