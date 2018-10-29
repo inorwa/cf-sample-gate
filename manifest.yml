@@ -2,6 +2,9 @@
 applications:
 - name: cf-sample-gate
   path: target/cf-sample-gate-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack
   memory: 768M
   instances: 1
   random-route: true
+  services:
+    - cf-spring-db

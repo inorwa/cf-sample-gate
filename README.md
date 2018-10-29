@@ -1,0 +1,1 @@
+based on: https://dzone.com/articles/spring-cloud-microservices-at-pivotal-platform
